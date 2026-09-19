@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dmjh1e8pq8ldi"]
+
+[ext_resource type="Texture2D" uid="uid://lxtperk8kuv5" path="res://assets/Sswor/кадр0000.png" id="1_8gdyf"]
+
+[node name="SwrodItem" type="Node3D" unique_id=1375484431]
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=641411238]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.29969305, 0.6194216, 0)
+texture = ExtResource("1_8gdyf")

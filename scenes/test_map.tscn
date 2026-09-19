@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://tq361clqdw2n"]
+
+[ext_resource type="PackedScene" uid="uid://bpnvsl2b5iejw" path="res://scenes/player.tscn" id="1_6ulkd"]
+[ext_resource type="PackedScene" uid="uid://dmjh1e8pq8ldi" path="res://scenes/swrod_item.tscn" id="2_fn2sa"]
+
+[node name="TestMap" type="Node3D" unique_id=590493992]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=2102973810]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Player" parent="." unique_id=1560486756 instance=ExtResource("1_6ulkd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75160027, 2.5282311, 5.2652326)
+
+[node name="xxx" type="CSGBox3D" parent="." unique_id=450013334]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.12028313, -0.4477539, -0.5563488)
+use_collision = true
+size = Vector3(16.065048, 0.10449219, 16.85315)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=34521267]
+transform = Transform3D(5.978761, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.9298775)
+use_collision = true
+
+[node name="SwrodItem" parent="." unique_id=1375484431 instance=ExtResource("2_fn2sa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6229372, 0.5205784, -4.1897798)
